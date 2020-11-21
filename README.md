@@ -57,4 +57,15 @@ The first is needed to add regular users and the second to register replication 
 To add a regular user to a db you added follow this link https://stackoverflow.com/questions/3684749/creating-regular-users-in-couchdb
 
 
+## Running CouchDB as a systemd service
+
+In order to run CouchDB as system service:
+* gain root privileges 
+* copy the file `couchdb.service` in the folder `/etc/systemd/system`
+* enable CouchDB as service with `systemctl enable couchdb`
+* start CouchDB with `systemctl start couchdb`
+* and finally verify it with `systemctl status couchdb`
+
+**Now its time to relax!**
+
 
