@@ -1,0 +1,16 @@
+[Unit]
+Description=Apache CouchDB
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+RuntimeDirectory=couchdb
+User=couchdb
+Group=couchdb
+ExecStart=/home/couchdb/bin/couchdb
+Restart=always
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+
