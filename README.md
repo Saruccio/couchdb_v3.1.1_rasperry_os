@@ -5,7 +5,7 @@ I downloaded the CouchDB tarball from the official link
 
 https://www.apache.org/dyn/closer.lua?path=/couchdb/source/3.1.1/apache-couchdb-3.1.1.tar.gz
 
-I deflated the tarball on my Raspberry PI3 with the official Raspberry OS 
+I deflated the tarball on my Raspberry PI3 on which I installed the official Raspberry OS 
 
 https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit
 
@@ -40,7 +40,8 @@ Once you compiled CouchDB by yourself or downloaded the precompiled tarball, you
 In this section you will be guided to install CouchDB into the user home `/home/couchdb`.
 
 Before the first run you have to define the `admin` user.
-In order to do so you have to become `couchdb` user, open the file `/home/couchdb/etc/local.ini` and insert the password for the `admin` user in the section `[admins]`
+
+In order to do so you have to login as `couchdb` user, open the file `/home/couchdb/etc/local.ini` and insert the password for the `admin` user in the section `[admins]`
 
 You can find more details in the official instructions at the link https://docs.couchdb.org/en/stable/config/auth.html#config-admins
 
